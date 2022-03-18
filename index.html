@@ -13,116 +13,119 @@
 
 <body>
     <h1>Sudoku</h1>
-    <div class="tracker" id="tracker">
-        <p class="time-tracker">Time elapsed: <span id="time">0s</span></p>
-        <p class="mistake-tracker">Mistakes: <span id="mistakes">0</span></p>
-    </div>
-    <div class="gameboard" id="gameboard">
-        <div class="line" id="line-0">
-            <div class="number" id="number-0-0">
+    <div class="container">
+        <div class="tracker" id="tracker">
+            <p class="time-tracker">Time elapsed: <span id="time">0s</span></p>
+            <p class="mistake-tracker">Mistakes: <span id="mistakes">0</span></p>
+        </div>
+        <div class="gameboard-container" id="gameboard-container">
+            <div class="gameboard" id="gameboard">
+                <div class="line" id="line-0">
+                    <div class="number" id="number-0-0">
+                    </div>
+                    <div class="number" id="number-0-1">
+                    </div>
+                    <div class="number" id="number-0-2"></div>
+                    <div class="number" id="number-0-3"></div>
+                    <div class="number" id="number-0-4"></div>
+                    <div class="number" id="number-0-5"></div>
+                    <div class="number" id="number-0-6"></div>
+                    <div class="number" id="number-0-7"></div>
+                    <div class="number" id="number-0-8"></div>
+                </div>
+                <div class="line" id="line-1">
+                    <div class="number" id="number-1-0"></div>
+                    <div class="number" id="number-1-1"></div>
+                    <div class="number" id="number-1-2"></div>
+                    <div class="number" id="number-1-3"></div>
+                    <div class="number" id="number-1-4"></div>
+                    <div class="number" id="number-1-5"></div>
+                    <div class="number" id="number-1-6"></div>
+                    <div class="number" id="number-1-7"></div>
+                    <div class="number" id="number-1-8"></div>
+                </div>
+                <div class="line" id="line-2">
+                    <div class="number" id="number-2-0"></div>
+                    <div class="number" id="number-2-1"></div>
+                    <div class="number" id="number-2-2"></div>
+                    <div class="number" id="number-2-3"></div>
+                    <div class="number" id="number-2-4"></div>
+                    <div class="number" id="number-2-5"></div>
+                    <div class="number" id="number-2-6"></div>
+                    <div class="number" id="number-2-7"></div>
+                    <div class="number" id="number-2-8"></div>
+                </div>
+                <div class="line" id="line-3">
+                    <div class="number" id="number-3-0"></div>
+                    <div class="number" id="number-3-1"></div>
+                    <div class="number" id="number-3-2"></div>
+                    <div class="number" id="number-3-3"></div>
+                    <div class="number" id="number-3-4"></div>
+                    <div class="number" id="number-3-5"></div>
+                    <div class="number" id="number-3-6"></div>
+                    <div class="number" id="number-3-7"></div>
+                    <div class="number" id="number-3-8"></div>
+                </div>
+                <div class="line" id="line-4">
+                    <div class="number" id="number-4-0"></div>
+                    <div class="number" id="number-4-1"></div>
+                    <div class="number" id="number-4-2"></div>
+                    <div class="number" id="number-4-3"></div>
+                    <div class="number" id="number-4-4"></div>
+                    <div class="number" id="number-4-5"></div>
+                    <div class="number" id="number-4-6"></div>
+                    <div class="number" id="number-4-7"></div>
+                    <div class="number" id="number-4-8"></div>
+                </div>
+                <div class="line" id="line-5">
+                    <div class="number" id="number-5-0"></div>
+                    <div class="number" id="number-5-1"></div>
+                    <div class="number" id="number-5-2"></div>
+                    <div class="number" id="number-5-3"></div>
+                    <div class="number" id="number-5-4"></div>
+                    <div class="number" id="number-5-5"></div>
+                    <div class="number" id="number-5-6"></div>
+                    <div class="number" id="number-5-7"></div>
+                    <div class="number" id="number-5-8"></div>
+                </div>
+                <div class="line" id="line-6">
+                    <div class="number" id="number-6-0"></div>
+                    <div class="number" id="number-6-1"></div>
+                    <div class="number" id="number-6-2"></div>
+                    <div class="number" id="number-6-3"></div>
+                    <div class="number" id="number-6-4"></div>
+                    <div class="number" id="number-6-5"></div>
+                    <div class="number" id="number-6-6"></div>
+                    <div class="number" id="number-6-7"></div>
+                    <div class="number" id="number-6-8"></div>
+                </div>
+                <div class="line" id="line-7">
+                    <div class="number" id="number-7-0"></div>
+                    <div class="number" id="number-7-1"></div>
+                    <div class="number" id="number-7-2"></div>
+                    <div class="number" id="number-7-3"></div>
+                    <div class="number" id="number-7-4"></div>
+                    <div class="number" id="number-7-5"></div>
+                    <div class="number" id="number-7-6"></div>
+                    <div class="number" id="number-7-7"></div>
+                    <div class="number" id="number-7-8"></div>
+                </div>
+                <div class="line" id="line-8">
+                    <div class="number" id="number-8-0"></div>
+                    <div class="number" id="number-8-1"></div>
+                    <div class="number" id="number-8-2"></div>
+                    <div class="number" id="number-8-3"></div>
+                    <div class="number" id="number-8-4"></div>
+                    <div class="number" id="number-8-5"></div>
+                    <div class="number" id="number-8-6"></div>
+                    <div class="number" id="number-8-7"></div>
+                    <div class="number" id="number-8-8"></div>
+                </div>
             </div>
-            <div class="number" id="number-0-1">
-            </div>
-            <div class="number" id="number-0-2"></div>
-            <div class="number" id="number-0-3"></div>
-            <div class="number" id="number-0-4"></div>
-            <div class="number" id="number-0-5"></div>
-            <div class="number" id="number-0-6"></div>
-            <div class="number" id="number-0-7"></div>
-            <div class="number" id="number-0-8"></div>
         </div>
-        <div class="line" id="line-1">
-            <div class="number" id="number-1-0"></div>
-            <div class="number" id="number-1-1"></div>
-            <div class="number" id="number-1-2"></div>
-            <div class="number" id="number-1-3"></div>
-            <div class="number" id="number-1-4"></div>
-            <div class="number" id="number-1-5"></div>
-            <div class="number" id="number-1-6"></div>
-            <div class="number" id="number-1-7"></div>
-            <div class="number" id="number-1-8"></div>
-        </div>
-        <div class="line" id="line-2">
-            <div class="number" id="number-2-0"></div>
-            <div class="number" id="number-2-1"></div>
-            <div class="number" id="number-2-2"></div>
-            <div class="number" id="number-2-3"></div>
-            <div class="number" id="number-2-4"></div>
-            <div class="number" id="number-2-5"></div>
-            <div class="number" id="number-2-6"></div>
-            <div class="number" id="number-2-7"></div>
-            <div class="number" id="number-2-8"></div>
-        </div>
-        <div class="line" id="line-3">
-            <div class="number" id="number-3-0"></div>
-            <div class="number" id="number-3-1"></div>
-            <div class="number" id="number-3-2"></div>
-            <div class="number" id="number-3-3"></div>
-            <div class="number" id="number-3-4"></div>
-            <div class="number" id="number-3-5"></div>
-            <div class="number" id="number-3-6"></div>
-            <div class="number" id="number-3-7"></div>
-            <div class="number" id="number-3-8"></div>
-        </div>
-        <div class="line" id="line-4">
-            <div class="number" id="number-4-0"></div>
-            <div class="number" id="number-4-1"></div>
-            <div class="number" id="number-4-2"></div>
-            <div class="number" id="number-4-3"></div>
-            <div class="number" id="number-4-4"></div>
-            <div class="number" id="number-4-5"></div>
-            <div class="number" id="number-4-6"></div>
-            <div class="number" id="number-4-7"></div>
-            <div class="number" id="number-4-8"></div>
-        </div>
-        <div class="line" id="line-5">
-            <div class="number" id="number-5-0"></div>
-            <div class="number" id="number-5-1"></div>
-            <div class="number" id="number-5-2"></div>
-            <div class="number" id="number-5-3"></div>
-            <div class="number" id="number-5-4"></div>
-            <div class="number" id="number-5-5"></div>
-            <div class="number" id="number-5-6"></div>
-            <div class="number" id="number-5-7"></div>
-            <div class="number" id="number-5-8"></div>
-        </div>
-        <div class="line" id="line-6">
-            <div class="number" id="number-6-0"></div>
-            <div class="number" id="number-6-1"></div>
-            <div class="number" id="number-6-2"></div>
-            <div class="number" id="number-6-3"></div>
-            <div class="number" id="number-6-4"></div>
-            <div class="number" id="number-6-5"></div>
-            <div class="number" id="number-6-6"></div>
-            <div class="number" id="number-6-7"></div>
-            <div class="number" id="number-6-8"></div>
-        </div>
-        <div class="line" id="line-7">
-            <div class="number" id="number-7-0"></div>
-            <div class="number" id="number-7-1"></div>
-            <div class="number" id="number-7-2"></div>
-            <div class="number" id="number-7-3"></div>
-            <div class="number" id="number-7-4"></div>
-            <div class="number" id="number-7-5"></div>
-            <div class="number" id="number-7-6"></div>
-            <div class="number" id="number-7-7"></div>
-            <div class="number" id="number-7-8"></div>
-        </div>
-        <div class="line" id="line-8">
-            <div class="number" id="number-8-0"></div>
-            <div class="number" id="number-8-1"></div>
-            <div class="number" id="number-8-2"></div>
-            <div class="number" id="number-8-3"></div>
-            <div class="number" id="number-8-4"></div>
-            <div class="number" id="number-8-5"></div>
-            <div class="number" id="number-8-6"></div>
-            <div class="number" id="number-8-7"></div>
-            <div class="number" id="number-8-8"></div>
-        </div>
-    </div>
-    <div class="container" id="container">
-        <div class="helper-options" id="helper-options">
-            <!-- <div class="candidate" id="candidate">
+        <div class="btn-container" id="btn-container">
+            <div class="helper-options" id="helper-options">
+                <!-- <div class="candidate" id="candidate">
                 <div class="btn-wrapper" id="btn-wrapper-headset">
                     <i class="fa-solid fa-headset fa-2x" id="icon-headset"></i>
                 </div>
@@ -134,14 +137,14 @@
                 </div>
                 <p>Solution</p>
             </div> -->
-            <div class="eraser" id="eraser">
-                <div class="btn-wrapper" id="btn-wrapper-eraser">
-                    <i class="fa-solid fa-eraser fa-2x" id="icon-eraser"></i>
+                <div class="eraser" id="eraser">
+                    <div class="btn-wrapper" id="btn-wrapper-eraser">
+                        <i class="fa-solid fa-eraser fa-2x" id="icon-eraser"></i>
+                    </div>
+                    <p>Erase</p>
                 </div>
-                <p>Erase</p>
             </div>
-        </div>
-        <!-- <div class="solution-numbers-count" id="soultion-numbers-count">
+            <!-- <div class="solution-numbers-count" id="soultion-numbers-count">
             <div class="num-count" id="count1">
                 <svg width="8" height="8">
                     <circle class="dots" cx="5" cy="5" r="3" />
@@ -188,62 +191,63 @@
             <div class="num-count" id="count9">
             </div>
         </div> -->
-        <div class="solution-numbers-pad" id="solution-numbers-pad">
-            <div class="num" id="num1">
-                <i class="fa-solid fa-1 fa-3x"></i>
+            <div class="solution-numbers-pad" id="solution-numbers-pad">
+                <div class="num" id="num1">
+                    <i class="fa-solid fa-1 fa-3x"></i>
+                </div>
+                <div class="num" id="num2">
+                    <i class="fa-solid fa-2 fa-3x"></i>
+                </div>
+                <div class="num" id="num3">
+                    <i class="fa-solid fa-3 fa-3x"></i>
+                </div>
+                <div class="num" id="num4">
+                    <i class="fa-solid fa-4 fa-3x"></i>
+                </div>
+                <div class="num" id="num5">
+                    <i class="fa-solid fa-5 fa-3x"></i>
+                </div>
+                <div class="num" id="num6">
+                    <i class="fa-solid fa-6 fa-3x"></i>
+                </div>
+                <div class="num" id="num7">
+                    <i class="fa-solid fa-7 fa-3x"></i>
+                </div>
+                <div class="num" id="num8">
+                    <i class="fa-solid fa-8 fa-3x"></i>
+                </div>
+                <div class="num" id="num9">
+                    <i class="fa-solid fa-9 fa-3x"></i>
+                </div>
             </div>
-            <div class="num" id="num2">
-                <i class="fa-solid fa-2 fa-3x"></i>
-            </div>
-            <div class="num" id="num3">
-                <i class="fa-solid fa-3 fa-3x"></i>
-            </div>
-            <div class="num" id="num4">
-                <i class="fa-solid fa-4 fa-3x"></i>
-            </div>
-            <div class="num" id="num5">
-                <i class="fa-solid fa-5 fa-3x"></i>
-            </div>
-            <div class="num" id="num6">
-                <i class="fa-solid fa-6 fa-3x"></i>
-            </div>
-            <div class="num" id="num7">
-                <i class="fa-solid fa-7 fa-3x"></i>
-            </div>
-            <div class="num" id="num8">
-                <i class="fa-solid fa-8 fa-3x"></i>
-            </div>
-            <div class="num" id="num9">
-                <i class="fa-solid fa-9 fa-3x"></i>
-            </div>
-        </div>
-        <div class="notes-numbers-pad" id="notes-numbers-pad">
-            <div class="notes-num" id="notes-num1">
-                <i class="fa-solid fa-1 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num2">
-                <i class="fa-solid fa-2 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num3">
-                <i class="fa-solid fa-3 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num4">
-                <i class="fa-solid fa-4 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num5">
-                <i class="fa-solid fa-5 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num6">
-                <i class="fa-solid fa-6 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num7">
-                <i class="fa-solid fa-7 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num8">
-                <i class="fa-solid fa-8 fa-2x"></i>
-            </div>
-            <div class="notes-num" id="notes-num9">
-                <i class="fa-solid fa-9 fa-2x"></i>
+            <div class="notes-numbers-pad" id="notes-numbers-pad">
+                <div class="notes-num" id="notes-num1">
+                    <i class="fa-solid fa-1 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num2">
+                    <i class="fa-solid fa-2 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num3">
+                    <i class="fa-solid fa-3 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num4">
+                    <i class="fa-solid fa-4 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num5">
+                    <i class="fa-solid fa-5 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num6">
+                    <i class="fa-solid fa-6 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num7">
+                    <i class="fa-solid fa-7 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num8">
+                    <i class="fa-solid fa-8 fa-2x"></i>
+                </div>
+                <div class="notes-num" id="notes-num9">
+                    <i class="fa-solid fa-9 fa-2x"></i>
+                </div>
             </div>
         </div>
     </div>
